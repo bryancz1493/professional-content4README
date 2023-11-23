@@ -11,6 +11,31 @@ const questions = [
         message: 'Enter your project name',
     },
     {
+        type: 'input',
+        name: 'description',
+        message: 'Enter your project description',
+    },
+    {
+        type: 'input',
+        name: 'installation instructions',
+        message: 'Enter the instructions for installation',
+    },
+    {
+        type: 'input',
+        name: 'usage information',
+        message: 'Enter the usage information',
+    },
+    {
+        type: 'input',
+        name: 'contribution guideline',
+        messgae: 'Enter contribution guidelines',
+    },
+    {
+        type: 'input',
+        name: 'test instructions',
+        message: 'Enter your test instructions',
+    },
+    {
         type: 'list',
         name: 'License Type',
         choices: ['MIT License', 'Morzilla Public License 2.0', 'GPL 3.0 License'],
