@@ -2,13 +2,9 @@
 const fs = require('fs');
 const path = require('path');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
-    {
-        type: 'input',
-        name: 'GitHub Username',
-        message: 'Enter your GitHub username'
-    },
     {
         type: 'input',
         name: 'title',
@@ -17,11 +13,21 @@ const questions = [
     {
         type: 'list',
         name: 'License Type',
-        choices: [inquirer.Separator(),'MIT License', new inquirer.Separator(), 'Morzilla Public License 2.0'],
+        choices: ['MIT License', 'Morzilla Public License 2.0', 'GPL 3.0 License'],
+    },
+    {
+        type: 'input',
+        name: 'GitHub Username',
+        message: 'Enter your GitHub username'
+    },
+    {
+        type: 'input',
+        name: 'Email',
+        message: 'Enter your email',
     },
 ];
 
-// Add README template
+// Add README template 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -32,7 +38,8 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((response) => {
-    writeToFile('README-challenge.md', response.title);
+    console.log("responses", response);
+    writeToFile('README-challenge.md', generateMarkdown(response));
     })
 }
 
