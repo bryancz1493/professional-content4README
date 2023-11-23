@@ -25,9 +25,7 @@ const questions = [
         name: 'Email',
         message: 'Enter your email',
     },
-];
-
-// Add README template 
+]; 
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
