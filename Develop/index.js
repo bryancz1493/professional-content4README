@@ -17,37 +17,37 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation instructions',
+        name: 'installation',
         message: 'Enter the instructions for installation',
     },
     {
         type: 'input',
-        name: 'usage information',
+        name: 'usage',
         message: 'Enter the usage information',
     },
     {
         type: 'input',
-        name: 'contribution guideline',
+        name: 'contribution',
         messgae: 'Enter contribution guidelines',
     },
     {
         type: 'input',
-        name: 'test instructions',
+        name: 'test',
         message: 'Enter your test instructions',
     },
     {
         type: 'list',
-        name: 'License Type',
+        name: 'license',
         choices: ['MIT License', 'Morzilla Public License 2.0', 'GPL 3.0 License'],
     },
     {
         type: 'input',
-        name: 'GitHub Username',
+        name: 'GitHub',
         message: 'Enter your GitHub username'
     },
     {
         type: 'input',
-        name: 'Email',
+        name: 'email',
         message: 'Enter your email',
     },
 ]; 

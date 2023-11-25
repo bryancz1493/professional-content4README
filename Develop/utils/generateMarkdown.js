@@ -14,7 +14,22 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   // Generate mark down for readme content
   return `# ${data.title}
-  
+
+## ${data.description}
+
+## ${data.installation}
+
+## ${data.usage}
+
+## ${data.contribution}
+
+## ${data.test}
+
+## ${data.license}
+
+## ${data.GitHub}
+
+## ${data.email}
 `;
 }
 
