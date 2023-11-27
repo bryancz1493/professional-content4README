@@ -33,9 +33,11 @@ ${data.test}
 ## License
 ${data.license}
 
-[GitHub](https://github.com/${data.GitHub})
+## GitHub
+(https://github.com/${data.GitHub})
 
-[Email](${data.email})
+## Email
+<${data.email}>
 `;
 }
 
