@@ -15,21 +15,27 @@ function generateMarkdown(data) {
   // Generate mark down for readme content
   return `# ${data.title}
 
-## ${data.description}
+## Project Description
+${data.description}
 
-## ${data.installation}
+## Installation Insturctions
+${data.installation}
 
-## ${data.usage}
+## Usage Information
+${data.usage}
 
-## ${data.contribution}
+## Contribution Guildlines
+${data.contribution}
 
-## ${data.test}
+## Tests
+${data.test}
 
-## ${data.license}
+## License
+${data.license}
 
-## ${data.GitHub}
+[GitHub](https://github.com/${data.GitHub})
 
-## ${data.email}
+[Email](${data.email})
 `;
 }
 
