@@ -14,8 +14,10 @@ function renderLicenseSection(license) {}
 function generateMarkdown(data) {
   // Generate mark down for readme content
   return `# ${data.title}
+## Table of Contents
+[Description](# description)
 
-## Project Description
+## Description
 ${data.description}
 
 ## Installation Insturctions
